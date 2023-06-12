@@ -12,6 +12,9 @@ public class ImperialAPI {
     public double inchToCenti(@RequestParam double inch){
         return inch*2.54;
     }
-    
 
+    @RequestMapping("/api/meter")
+    public double yardToMeter(@RequestParam double yard){
+        return yard/1.094;
+    }
 }
